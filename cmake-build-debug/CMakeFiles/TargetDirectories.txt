@@ -1,0 +1,5 @@
+/Users/whiteblue/Code/C/presto4gpu/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/whiteblue/Code/C/presto4gpu/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/whiteblue/Code/C/presto4gpu/cmake-build-debug/src/CMakeFiles/accelsearch.dir
+/Users/whiteblue/Code/C/presto4gpu/cmake-build-debug/src/CMakeFiles/edit_cache.dir
+/Users/whiteblue/Code/C/presto4gpu/cmake-build-debug/src/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,199 @@
+## This file contains all the build statements describing the
+# compilation DAG.
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# 
+# Which is the root file.
+# =============================================================================
+
+# =============================================================================
+# Project: presto4gpu
+# Configurations: Debug
+# =============================================================================
+
+#############################################
+# Minimal version of Ninja required by this file
+
+ninja_required_version = 1.5
+
+
+#############################################
+# Set configuration variable for custom commands.
+
+CONFIGURATION = Debug
+# =============================================================================
+# Include auxiliary files.
+
+
+#############################################
+# Include rules file.
+
+include CMakeFiles/rules.ninja
+
+# =============================================================================
+
+#############################################
+# Logical path to working directory; prefix for absolute paths.
+
+cmake_ninja_workdir = /Users/whiteblue/Code/C/presto4gpu/cmake-build-debug/
+
+#############################################
+# Utility command for edit_cache
+
+build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/whiteblue/Code/C/presto4gpu/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build edit_cache: phony CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/whiteblue/Code/C/presto4gpu/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/whiteblue/Code/C/presto4gpu -B/Users/whiteblue/Code/C/presto4gpu/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build rebuild_cache: phony CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/whiteblue/Code/C/presto4gpu/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target accelsearch
+
+
+#############################################
+# Order-only phony target for accelsearch
+
+build cmake_object_order_depends_target_accelsearch: phony || src/CMakeFiles/accelsearch.dir
+
+build src/CMakeFiles/accelsearch.dir/accelsearch.c.o: C_COMPILER__accelsearch_Debug /Users/whiteblue/Code/C/presto4gpu/src/accelsearch.c || cmake_object_order_depends_target_accelsearch
+  DEP_FILE = src/CMakeFiles/accelsearch.dir/accelsearch.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -std=gnu11
+  INCLUDES = -I/Users/whiteblue/Code/C/presto4gpu/PkgConfig::FFTW -I/Users/whiteblue/Code/C/presto4gpu/PkgConfig::GLIB -I/opt/homebrew/Cellar/pgplot/5.2.2_11/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/System/Library/Frameworks -I/Users/whiteblue/Code/C/presto4gpu/include -isystem /opt/homebrew/Cellar/fftw/3.3.10_1/include -isystem /opt/homebrew/Cellar/glib/2.74.3/include/glib-2.0 -isystem /opt/homebrew/Cellar/glib/2.74.3/lib/glib-2.0/include -isystem /opt/homebrew/opt/gettext/include -isystem /opt/homebrew/Cellar/pcre2/10.40/include
+  OBJECT_DIR = src/CMakeFiles/accelsearch.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/accelsearch.dir
+
+build src/CMakeFiles/accelsearch.dir/accelsearch_cmd.c.o: C_COMPILER__accelsearch_Debug /Users/whiteblue/Code/C/presto4gpu/src/accelsearch_cmd.c || cmake_object_order_depends_target_accelsearch
+  DEP_FILE = src/CMakeFiles/accelsearch.dir/accelsearch_cmd.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -std=gnu11
+  INCLUDES = -I/Users/whiteblue/Code/C/presto4gpu/PkgConfig::FFTW -I/Users/whiteblue/Code/C/presto4gpu/PkgConfig::GLIB -I/opt/homebrew/Cellar/pgplot/5.2.2_11/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/System/Library/Frameworks -I/Users/whiteblue/Code/C/presto4gpu/include -isystem /opt/homebrew/Cellar/fftw/3.3.10_1/include -isystem /opt/homebrew/Cellar/glib/2.74.3/include/glib-2.0 -isystem /opt/homebrew/Cellar/glib/2.74.3/lib/glib-2.0/include -isystem /opt/homebrew/opt/gettext/include -isystem /opt/homebrew/Cellar/pcre2/10.40/include
+  OBJECT_DIR = src/CMakeFiles/accelsearch.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/accelsearch.dir
+
+build src/CMakeFiles/accelsearch.dir/accel_utils.c.o: C_COMPILER__accelsearch_Debug /Users/whiteblue/Code/C/presto4gpu/src/accel_utils.c || cmake_object_order_depends_target_accelsearch
+  DEP_FILE = src/CMakeFiles/accelsearch.dir/accel_utils.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -std=gnu11
+  INCLUDES = -I/Users/whiteblue/Code/C/presto4gpu/PkgConfig::FFTW -I/Users/whiteblue/Code/C/presto4gpu/PkgConfig::GLIB -I/opt/homebrew/Cellar/pgplot/5.2.2_11/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/System/Library/Frameworks -I/Users/whiteblue/Code/C/presto4gpu/include -isystem /opt/homebrew/Cellar/fftw/3.3.10_1/include -isystem /opt/homebrew/Cellar/glib/2.74.3/include/glib-2.0 -isystem /opt/homebrew/Cellar/glib/2.74.3/lib/glib-2.0/include -isystem /opt/homebrew/opt/gettext/include -isystem /opt/homebrew/Cellar/pcre2/10.40/include
+  OBJECT_DIR = src/CMakeFiles/accelsearch.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/accelsearch.dir
+
+build src/CMakeFiles/accelsearch.dir/zapping.c.o: C_COMPILER__accelsearch_Debug /Users/whiteblue/Code/C/presto4gpu/src/zapping.c || cmake_object_order_depends_target_accelsearch
+  DEP_FILE = src/CMakeFiles/accelsearch.dir/zapping.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -std=gnu11
+  INCLUDES = -I/Users/whiteblue/Code/C/presto4gpu/PkgConfig::FFTW -I/Users/whiteblue/Code/C/presto4gpu/PkgConfig::GLIB -I/opt/homebrew/Cellar/pgplot/5.2.2_11/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/System/Library/Frameworks -I/Users/whiteblue/Code/C/presto4gpu/include -isystem /opt/homebrew/Cellar/fftw/3.3.10_1/include -isystem /opt/homebrew/Cellar/glib/2.74.3/include/glib-2.0 -isystem /opt/homebrew/Cellar/glib/2.74.3/lib/glib-2.0/include -isystem /opt/homebrew/opt/gettext/include -isystem /opt/homebrew/Cellar/pcre2/10.40/include
+  OBJECT_DIR = src/CMakeFiles/accelsearch.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/accelsearch.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target accelsearch
+
+
+#############################################
+# Link the executable src/accelsearch
+
+build src/accelsearch: C_EXECUTABLE_LINKER__accelsearch_Debug src/CMakeFiles/accelsearch.dir/accelsearch.c.o src/CMakeFiles/accelsearch.dir/accelsearch_cmd.c.o src/CMakeFiles/accelsearch.dir/accel_utils.c.o src/CMakeFiles/accelsearch.dir/zapping.c.o | /opt/homebrew/Cellar/fftw/3.3.10_1/lib/libfftw3.dylib /opt/homebrew/Cellar/glib/2.74.3/lib/libglib-2.0.dylib /opt/homebrew/opt/gettext/lib/libintl.dylib
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk
+  LINK_LIBRARIES = -L/opt/homebrew/Cellar/pgplot/5.2.2_11/lib  -framework  OpenCL  /opt/homebrew/Cellar/fftw/3.3.10_1/lib/libfftw3.dylib  /opt/homebrew/Cellar/glib/2.74.3/lib/libglib-2.0.dylib  /opt/homebrew/opt/gettext/lib/libintl.dylib
+  OBJECT_DIR = src/CMakeFiles/accelsearch.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = src/accelsearch
+  TARGET_PDB = accelsearch.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build src/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/whiteblue/Code/C/presto4gpu/cmake-build-debug/src && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build src/edit_cache: phony src/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build src/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/whiteblue/Code/C/presto4gpu/cmake-build-debug/src && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/whiteblue/Code/C/presto4gpu -B/Users/whiteblue/Code/C/presto4gpu/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build src/rebuild_cache: phony src/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Target aliases.
+
+build accelsearch: phony src/accelsearch
+
+# =============================================================================
+# Folder targets.
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/whiteblue/Code/C/presto4gpu/cmake-build-debug
+
+build all: phony src/all
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/whiteblue/Code/C/presto4gpu/cmake-build-debug/src
+
+build src/all: phony src/accelsearch
+
+# =============================================================================
+# Built-in targets
+
+
+#############################################
+# Re-run CMake if any of its inputs changed.
+
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../src/CMakeLists.txt /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakePushCheckState.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CheckSymbolExists.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GNU-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GNU-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/FindOpenCL.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/FindPackageHandleStandardArgs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/FindPackageMessage.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/FindPkgConfig.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-GNU-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-GNU-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake
+  pool = console
+
+
+#############################################
+# A missing CMake input file is not an error.
+
+build ../CMakeLists.txt ../src/CMakeLists.txt /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakePushCheckState.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CheckSymbolExists.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GNU-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GNU-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/FindOpenCL.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/FindPackageHandleStandardArgs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/FindPackageMessage.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/FindPkgConfig.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-GNU-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-GNU-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake: phony
+
+
+#############################################
+# Clean all the built files.
+
+build clean: CLEAN
+
+
+#############################################
+# Print all primary targets available.
+
+build help: HELP
+
+
+#############################################
+# Make the all target the default.
+
+default all

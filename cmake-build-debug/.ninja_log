@@ -1,0 +1,8 @@
+# ninja log v5
+1	134	1671025548978505754	src/CMakeFiles/accelsearch.dir/accelsearch_cmd.c.o	91ef10cf4ee1c8
+1	137	1671028439088625538	src/CMakeFiles/accelsearch.dir/accelsearch.c.o	65a9edec49871dd0
+0	4	0	clean	3c8e6cc385ee00ba
+0	266	1671031905086852923	src/CMakeFiles/ocl_test.dir/ocl_test.cpp.o	91502f72b9966a53
+1	84	1671025685497302379	src/CMakeFiles/accelsearch.dir/zapping.c.o	86fa495e6bfc7c90
+1	278	1671025606454692231	src/CMakeFiles/accelsearch.dir/accel_utils.c.o	9399418b73f72cad
+266	303	1671031905124141918	src/ocl_test	f72e38fcf5d990c9

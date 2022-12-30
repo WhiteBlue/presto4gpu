@@ -1,0 +1,87 @@
+Determining if the CL_VERSION_2_2 exist failed with the following output:
+Change Dir: /Users/whiteblue/Code/C/presto4gpu/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Applications/CLion.app/Contents/bin/ninja/mac/ninja cmTC_4f783 && [1/2] Building C object CMakeFiles/cmTC_4f783.dir/CheckSymbolExists.c.o
+FAILED: CMakeFiles/cmTC_4f783.dir/CheckSymbolExists.c.o 
+/opt/homebrew/bin/gcc-12  -F/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/System/Library/Frameworks -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -std=gnu11 -o CMakeFiles/cmTC_4f783.dir/CheckSymbolExists.c.o -c /Users/whiteblue/Code/C/presto4gpu/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/whiteblue/Code/C/presto4gpu/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function 'main':
+/Users/whiteblue/Code/C/presto4gpu/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: 'CL_VERSION_2_2' undeclared (first use in this function); did you mean 'CL_VERSION_1_2'?
+    8 |   return ((int*)(&CL_VERSION_2_2))[argc];
+      |                   ^~~~~~~~~~~~~~
+      |                   CL_VERSION_1_2
+/Users/whiteblue/Code/C/presto4gpu/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+ninja: build stopped: subcommand failed.
+
+
+File /Users/whiteblue/Code/C/presto4gpu/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include </Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/System/Library/Frameworks/OpenCL.framework/Headers/cl.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef CL_VERSION_2_2
+  return ((int*)(&CL_VERSION_2_2))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the CL_VERSION_2_1 exist failed with the following output:
+Change Dir: /Users/whiteblue/Code/C/presto4gpu/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Applications/CLion.app/Contents/bin/ninja/mac/ninja cmTC_e7e53 && [1/2] Building C object CMakeFiles/cmTC_e7e53.dir/CheckSymbolExists.c.o
+FAILED: CMakeFiles/cmTC_e7e53.dir/CheckSymbolExists.c.o 
+/opt/homebrew/bin/gcc-12  -F/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/System/Library/Frameworks -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -std=gnu11 -o CMakeFiles/cmTC_e7e53.dir/CheckSymbolExists.c.o -c /Users/whiteblue/Code/C/presto4gpu/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/whiteblue/Code/C/presto4gpu/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function 'main':
+/Users/whiteblue/Code/C/presto4gpu/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: 'CL_VERSION_2_1' undeclared (first use in this function); did you mean 'CL_VERSION_1_1'?
+    8 |   return ((int*)(&CL_VERSION_2_1))[argc];
+      |                   ^~~~~~~~~~~~~~
+      |                   CL_VERSION_1_1
+/Users/whiteblue/Code/C/presto4gpu/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+ninja: build stopped: subcommand failed.
+
+
+File /Users/whiteblue/Code/C/presto4gpu/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include </Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/System/Library/Frameworks/OpenCL.framework/Headers/cl.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef CL_VERSION_2_1
+  return ((int*)(&CL_VERSION_2_1))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the CL_VERSION_2_0 exist failed with the following output:
+Change Dir: /Users/whiteblue/Code/C/presto4gpu/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Applications/CLion.app/Contents/bin/ninja/mac/ninja cmTC_b451f && [1/2] Building C object CMakeFiles/cmTC_b451f.dir/CheckSymbolExists.c.o
+FAILED: CMakeFiles/cmTC_b451f.dir/CheckSymbolExists.c.o 
+/opt/homebrew/bin/gcc-12  -F/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/System/Library/Frameworks -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -std=gnu11 -o CMakeFiles/cmTC_b451f.dir/CheckSymbolExists.c.o -c /Users/whiteblue/Code/C/presto4gpu/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/whiteblue/Code/C/presto4gpu/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function 'main':
+/Users/whiteblue/Code/C/presto4gpu/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: 'CL_VERSION_2_0' undeclared (first use in this function); did you mean 'CL_VERSION_1_0'?
+    8 |   return ((int*)(&CL_VERSION_2_0))[argc];
+      |                   ^~~~~~~~~~~~~~
+      |                   CL_VERSION_1_0
+/Users/whiteblue/Code/C/presto4gpu/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+ninja: build stopped: subcommand failed.
+
+
+File /Users/whiteblue/Code/C/presto4gpu/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include </Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/System/Library/Frameworks/OpenCL.framework/Headers/cl.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef CL_VERSION_2_0
+  return ((int*)(&CL_VERSION_2_0))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
